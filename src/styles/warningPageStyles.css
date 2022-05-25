@@ -1,0 +1,13 @@
+.warningContainer {
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  /* display: flex; */
+}
+.warningContainer h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

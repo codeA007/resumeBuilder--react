@@ -1,0 +1,13 @@
+.bottomNavbarContainer {
+  background: #eef2f3;
+  margin: 10px 0 0 0;
+  float: right;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.text {
+  margin: 5px 15px;
+  font-size: 14px;
+}

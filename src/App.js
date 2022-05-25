@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import Theme1 from './themes/Theme1.jsx';
+import './styles/app.css'
+import FormTheme1 from './components/FormTheme1.jsx';
+import ReactGa from 'react-ga';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    useEffect(() => {
+        ReactGa.initialize('create', 'G-4ZL9XL6MKX');
+        // ReactGa.push(['', 'none']);
+        ReactGa.pageview('/');
+    }, []);
+    return (
+        <div>
+            <FormTheme1 />
+        </div>
+    )
 }
-
-export default App;

@@ -1,0 +1,110 @@
+.MainContainer {
+  margin: 10px;
+}
+.styleContainer {
+  max-width: 900px;
+  margin: auto;
+}
+.userDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userDetails img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+}
+.userContacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.email,
+.linkedIn,
+.contactNo {
+  display: flex;
+  align-items: center;
+}
+.email p,
+.linkedIn a,
+.contactNo p {
+  margin-left: 5px;
+}
+.userDetails3 {
+  display: flex;
+}
+.education {
+  flex: 2.1;
+}
+.skills {
+  flex: 1;
+}
+.heading {
+  color: #3c8cf0;
+  margin: 5px 0;
+}
+.eng,
+.class12,
+.class10 {
+  margin: 10px 0;
+}
+.userDetails4,
+.userDetails6 {
+  display: flex;
+}
+.projects,
+.achivements {
+  flex: 2.1;
+}
+.projects {
+  padding-right: 8px;
+}
+
+.userDetails5,
+.certifications {
+  flex: 1;
+}
+.certifications p {
+  margin: 10px 0;
+}
+.project {
+  margin: 10px 0;
+}
+li {
+  margin: 10px 0;
+}
+.print {
+  margin: auto auto;
+  width: 150px;
+  padding: 10px 15px;
+  border: none;
+  background: #3c8cf0;
+  color: white;
+  font-family: var(--default-font);
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0;
+}
+
+@media print {
+  .styleContainer {
+    margin: 10px;
+  }
+  .achivements ul {
+    padding-left: 12px;
+  }
+  .project h3 {
+    font-weight: bold;
+  }
+  /* p {
+    font-size: 14px;
+  } */
+}
